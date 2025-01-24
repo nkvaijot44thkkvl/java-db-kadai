@@ -34,7 +34,7 @@ public class Scores_Chapter10 {
 			//SQLクエリを実行(DBMSに送信)
 			System.out.println("レコード更新を実行します");
 			
-			int rowCnt = statementUP.executeUpdate(sqlUpdate); //sqlUpdateが入るとSQLにエラー
+			int rowCnt = statementUP.executeUpdate(); //sqlUpdateが入るとSQLにエラー
 			//You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? ,score_english = ? WHERE id = 5' at line 1
 			System.out.println(rowCnt + "件のレコードが更新されました");
 			System.out.println("数学・英語の点数が高い順に並べ替えました");
